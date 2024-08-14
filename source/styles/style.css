@@ -142,7 +142,9 @@ img {
     max-width: 100%;
     height: auto
 }
-
+.bold-color {
+    color: var(--first-color);
+}
 .section {
     padding: 4rem 0 3rem
 }
