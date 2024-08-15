@@ -2,7 +2,7 @@ $(document).ready(function () {
     let activeElement = (selector) => {
       for (let index = 0, comp = selector.length; index < comp; index++) {
         let element = selector[index];
-        if (element.classList.contains("actives")) {
+        if (element.classList.contains("active")) {
           return element;
         }
       }
@@ -38,16 +38,16 @@ $(document).ready(function () {
     days.forEach((element) => {
       element.addEventListener("click", (e) => {
         if (!(element === activeElement(days)) && activeElement(days)) {
-          activeElement(days).classList.remove("actives");
-          e.target.classList.add("actives");
+          activeElement(days).classList.remove("active");
+          e.target.classList.add("active");
           let descItems = document.querySelectorAll("#guide .details div");
           let desc = document.getElementById(e.target.dataset.day);
-          if (!desc.classList.contains("actives")) {
+          if (!desc.classList.contains("active")) {
             let x = activeElement(descItems);
             dAnimate(x, "hide", 5);
-            x.classList.remove("actives");
+            x.classList.remove("active");
             setTimeout(() => {
-              desc.classList.add("actives");
+              desc.classList.add("active");
               dAnimate(desc, "show", 200);
               10;
             });
