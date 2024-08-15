@@ -409,7 +409,7 @@ video  {
     color: #b9b9bc;
 }
 
-.guide .days .day.actives {
+.guide .days .day.active {
     color: var(--first-color);
     border-bottom: 6px solid var(--first-color);
 }
@@ -424,7 +424,7 @@ video  {
 .guide .details div {
     display: none;
 }
-.guide .datails div.actives {
+.guide .datails div.active {
     display: block;
 }
 .guide .datails strong {
