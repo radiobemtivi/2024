@@ -100,7 +100,7 @@ body.dark-theme {
     --title-color: hsl(326, 8%, 95%);
     --text-color: hsl(150, 10%, 80%);
     --body-color: rgb(31, 30, 30);
-    --container-color: hsl(326, 10%, 17%);
+    --container-color: hsl(40, 10%, 17%);
     --filter-color: rgb(31, 40, 40)
 }
 
@@ -313,9 +313,6 @@ video  {
     margin-left: -54px;
 }
 
-.links {
-    position: relative;
-}
 .about__img,
 .button {
     border-radius: .5rem
@@ -378,6 +375,111 @@ video  {
 
 .services__description {
     padding: 0 1.5rem
+}
+
+.guide {
+   color: var(--color);   
+}
+
+.guide .sectionTitle {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: 3.4px;
+}
+
+.guide .sectionSubtitle {
+    font-size: var(--h3-font-size);
+    margin-top: 0.5px;
+}
+
+.guide .days {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.0;
+    width: 100%;
+}
+.guide .days .day {
+    cursor: pointer;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    border-bottom: 2px solid #e8e8e9;
+    color: #b9b9bc;
+}
+
+.guide .days .day.actives {
+    color: var(--first-color);
+    border-bottom: 6px solid var(--first-color);
+}
+
+.guide .days .day>* {
+    pointer-events: none;
+}
+
+.guide .days p {
+    margin-bottom: .4rem;
+}
+.guide .details div {
+    display: none;
+}
+.guide .datails div.actives {
+    display: block;
+}
+.guide .datails strong {
+    margin-right: .5rem;
+}
+.guide .item {
+    position: relative;
+}
+.guide .item::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .55);
+}
+.guide {
+    display: block;
+    width: 100%;
+    height: 40vh;
+}
+.guide {
+    padding: 1.5rem 0 0;
+}
+.guide .details div.contentText {
+    display: block;
+    color: var(--text-color);
+}
+.representative__container {
+    margin-top: 8rem;
+}
+@media only screen and (max-width:330px) {
+    .guide  {
+        white-space: normal
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .guide {
+        padding: 3.5rem 0 2rem
+    }
+
+    .guide .details {
+        margin-bottom: 1.5rem
+    }
+    .guide  {
+        padding-bottom: 2rem
+    }
+
+    .guide  .guide__container {
+        padding-left: 15px;
+        padding-right: 15px
+    }
 }
 
 .representative__description {
