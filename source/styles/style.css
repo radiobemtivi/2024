@@ -313,6 +313,29 @@ video  {
     margin-left: -54px;
 }
 
+.countdown-shirt {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+.countdown-shirt h1 {
+    color: var(--text-color);
+    text-shadow: 0 0 2.5px #f7eeee;
+    margin-right: 12px;
+}
+.countdown-shirt p {
+    margin-left: 22px;
+    padding-right: 2rem;
+
+}
+@media screen and (max-width: 450px) {
+  .countdown-shirt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+}
 .about__img,
 .button {
     border-radius: .5rem
